@@ -10,6 +10,8 @@ import ProductInfo from "./components/ProductInfo.jsx";
 import ListArray from "./components/listArray.jsx";
 import Component from "./components/Component.jsx";
 import UserStatus from "./components/UserStatus.jsx";
+import Counter from "./components/Counter.jsx";
+import TodoList from "./components/TodoList.jsx";
 
 const app = () => {
   return (
@@ -17,7 +19,7 @@ const app = () => {
       {/*<Add />*/}
       {/*<Greet />*/}
       {/*<WelcomeMessage />*/}
-        <Header />
+      {/* <Header />
         <MainContent />
         <Footer />
         <JSXRules />
@@ -25,7 +27,10 @@ const app = () => {
         <ProductInfo/>
         <ListArray/>
         <Component isValid={false}/>
-        <UserStatus loggedIn={true} isAdmin={false}/>
+        <UserStatus loggedIn={true} isAdmin={false}/> */}
+      {/* <Counter /> */}
+      {/* <h1>Hello world</h1> */}
+      <TodoList />
     </div>
   );
 };
