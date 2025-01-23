@@ -12,6 +12,7 @@ import Component from "./components/Component.jsx";
 import UserStatus from "./components/UserStatus.jsx";
 import Counter from "./components/Counter.jsx";
 import TodoList from "./components/TodoList.jsx";
+import Profile from "./components/Profile.jsx";
 
 const app = () => {
   return (
@@ -30,7 +31,8 @@ const app = () => {
         <UserStatus loggedIn={true} isAdmin={false}/> */}
       {/* <Counter /> */}
       {/* <h1>Hello world</h1> */}
-      <TodoList />
+      {/*<TodoList />*/}
+        <Profile />
     </div>
   );
 };
