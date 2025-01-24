@@ -6,34 +6,42 @@
 // • Provide input fields to update the name and age.
 // • Display the updated profile information.
 
-import {useState} from "react";
+import { useState } from "react";
 
 const Profile = () => {
-const [info, setInfo] = useState(
-    {
-        name: "John",
-        age: 25
-    }
-);
+  const [info, setInfo] = useState({
+    name: "John",
+    age: 25,
+  });
 
-const [ageNumber, setAgeNumber] = useState("`${info.age}`");
-const[name,setName] = useState("");
+  const [ageNumber, setAgeNumber] = useState(0);
+  const [name, setName] = useState("");
 
-const handleClick = () => {
-    setInfo({...info, age: ageNumber});
-    setInfo({...info, name: name});
-}
+  const handleClick = () => {
+    setInfo({ ...info, age: ageNumber, name: name });
 
+    console.log(ageNumber);
+    console.log(name);
+  };
 
-    return (
-        <div>
-            Age: <input type="number" value={ageNumber} onChange={(e) => setAgeNumber(e.target.value)}/>
-            Name: <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-            <button onClick={handleClick}>Click</button>
-            <h1>{info.age}</h1>
-            <h1>{info.name}</h1>
-        </div>
-
-    )
-}
-export default Profile
+  return (
+    <div>
+      Age:{" "}
+      <input
+        type="number"
+        value={ageNumber}
+        onChange={(e) => setAgeNumber(e.target.value)}
+      />
+      Name:{" "}
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <button onClick={handleClick}>Click</button>
+      <h1>{info.age}</h1>
+      <h1>{info.name}</h1>
+    </div>
+  );
+};
+export default Profile;

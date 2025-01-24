@@ -13,6 +13,7 @@ import UserStatus from "./components/UserStatus.jsx";
 import Counter from "./components/Counter.jsx";
 import TodoList from "./components/TodoList.jsx";
 import Profile from "./components/Profile.jsx";
+import ShoppingList from "./components/ShoppingList.jsx";
 
 const app = () => {
   return (
@@ -32,7 +33,8 @@ const app = () => {
       {/* <Counter /> */}
       {/* <h1>Hello world</h1> */}
       {/*<TodoList />*/}
-        <Profile />
+      {/* <Profile /> */}
+      <ShoppingList />
     </div>
   );
 };
