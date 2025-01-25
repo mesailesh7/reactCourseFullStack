@@ -15,8 +15,30 @@ const ShoppingList = () => {
     { name: "Milk", quantity: 2 },
   ]);
 
+  const [foodName, setFoodName] = useState();
+  const [foodQuantity, setFoodQuantity] = useState(0);
+
+  const handeClick = () => {
+    setItems([...items, { name: foodName, quantity: foodQuantity }]);
+    setFoodName("");
+    setFoodQuantity(0);
+  };
+
   return (
     <div>
+      Name:{" "}
+      <input
+        type="text"
+        value={items.name}
+        onChange={(e) => setFoodName(e.target.value)}
+      />
+      Quantity:{" "}
+      <input
+        type="number"
+        value={items.quantity}
+        onChange={(e) => setFoodQuantity(e.target.value)}
+      />
+      <button onClick={handeClick}>Submit</button>
       {items.map((item, index) => (
         <ul key={index}>
           <li>

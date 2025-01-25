@@ -11,6 +11,9 @@ const Counter = () => {
     <div>
       <p>{counter}</p>
       <button onClick={handleClick}>Click me</button>
+      <button onClick={() => setCounter(counter - 1)}>
+        Decrease the counter with another way
+      </button>
     </div>
   );
 };
