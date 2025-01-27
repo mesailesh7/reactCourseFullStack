@@ -19,6 +19,14 @@ const Todo = () => {
     setInput("");
   };
 
+  // The parameter 't' is needed because you're working with React's setState updater function pattern. When you call setTodos, React needs to know what to do with the previous state to calculate the new state.
+
+  // The 't' parameter represents the current/previous state of todos at the time the update is being processed. This ensures you're always working with the most up-to-date state value, especially important when multiple state updates might be queued.
+
+  // You could name this parameter anything you want - 'prevState', 'currentTodos', 'state' - the name 't' is just a concise choice. What matters is that this parameter gives you access to the current state value so you can derive the next state from it.
+
+  // This pattern is particularly valuable for maintaining state updates that depend on the previous state, which is exactly what you're doing when filtering out a todo by its ID.
+
   const removeTodo = (id) => {
     setTodos((todos) => todos.filter((t) => t.id !== id));
   };

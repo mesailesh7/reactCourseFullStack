@@ -37,7 +37,6 @@ body {
     cursor: pointer;
 } */
 
-
 /* Todo */
 /* * {
     padding: 0;
@@ -99,7 +98,7 @@ button {
 } */
 
 /* Meals */
-
+/*
 * {
     padding: 0;
     margin: 0;
@@ -142,4 +141,218 @@ img {
     border-radius: 5px;
     height: 200px;
     width: 300px;
+} */
+
+/* Calculator */
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1b1b1b;
+}
+
+.calculator {
+    position: relative;
+    display: grid;
+}
+
+.calculator .value {
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculator span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    background: #292929;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.calculator span:active {
+    background: rgb(255, 163, 26);
+    color: #fff;
+}
+
+.calculator span.clear {
+    grid-column: span 2;
+    width: 120px;
+    background: rgb(255, 163, 26);
+
+}
+
+.calculator span.plus {
+    grid-row: span 2;
+    height: 120px;
+}
+
+.calculator span.equal {
+    background: rgb(255, 163, 26);
+
+} */
+
+/* ToggleBackgroundColor */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+section.content h1 {
+    font-size: 5rem;
+    font-family: "Bungee Outline", cursive;
+    line-height: 80px;
+} */
+
+/* Testimonnials */
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e8faff;
+}
+
+.testimonials {
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0fdfe;
+}
+
+.testimonials-quote {
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.testimonials-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonials-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-nav button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #82e5ee;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.testimonials-nav button:hover {
+    background-color: #037680;
+}
+
+.testimonials-nav button:active {
+    transform: scale(0.95);
+} */
+
+/* Accordion */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(36, 36, 36);
+    color: #fff;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: 2px solid white;
+}
+
+.accordion-card {
+    margin: 20px;
+    padding: 20px;
+    background: rgb(73, 73, 73);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+p.card-info {
+    width: 30rem;
+    padding: 20px 0;
+    line-height: 1.3;
 }
